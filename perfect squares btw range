@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+void perfectSquares(float l, float r)
+{
+ 
+    // For every element from the range
+    for (int i = l; i <= r; i++) {
+ 
+        // If current element is
+        // a perfect square
+        if (sqrt(i) == (int)sqrt(i))
+            cout << i << " ";
+    }
+}
+int main()
+{
+    int l = 0, r = 10;
+ 
+    perfectSquares(l, r);
+ 
+    return 0;
+}
